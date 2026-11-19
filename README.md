@@ -5,7 +5,7 @@
     A full-stack mobile and web application for tracking daily physical activity, monitoring health vitals, unlocking 3D milestone achievements, and receiving AI-powered wellness insights.
   </p>
   <p>
-    <a href="[https://stepwell-web-beta.vercel.app](https://stepwell-web-beta.vercel.app)"><strong> Live Demo</strong></a> ·
+    <a href="https://stepwell-web-beta.vercel.app"><strong> Live Demo</strong></a> ·
     <a href="#architecture--project-structure"><strong> Architecture</strong></a> ·
     <a href="#api-endpoints"><strong> REST API</strong></a> ·
     <a href="#local-setup"><strong> Local Setup</strong></a>
