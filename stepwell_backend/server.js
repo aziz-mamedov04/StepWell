@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const mysql = require("mysql2/promise");
+const pool = require("./db");
 
 const app = express();
 
@@ -24,16 +24,6 @@ if (!JWT_SECRET) {
   console.error("JWT_SECRET is missing in .env");
   process.exit(1);
 }
-
-const pool = mysql.createPool({
-  host: DB_HOST,
-  port: Number(DB_PORT),
-  user: DB_USER,
-  password: DB_PASSWORD,
-  database: DB_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-});
 
 function signToken(user) {
   return jwt.sign(
